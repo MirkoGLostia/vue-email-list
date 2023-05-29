@@ -5,7 +5,7 @@ const { createApp } = Vue;
 createApp ( {
     data () {
         return {
-            numberOfMails : 10,
+            numberOfMails : parseInt(prompt('quante mail vuoi?')) ,
             mailGot : [],
         }
     },
