@@ -19,6 +19,11 @@
         </div>
 
         <div>
+            <input v-model="numberOfMails" type="number" @keyup.enter="getNumberOfMails">
+            <button @click="getNumberOfMails"> create mails</button>
+        </div>
+
+        <div>
             <ol v-if="mailGot.length !== 0 && numberOfMails === mailGot.length">
                 <li v-for="mail in mailGot">
                     {{mail}}
