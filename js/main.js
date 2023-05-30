@@ -6,6 +6,7 @@ createApp ( {
     data () {
         return {
             numberOfMails : '' ,
+            saveState : '',
             mailGot : [],
         }
     },
@@ -14,6 +15,8 @@ createApp ( {
         getNumberOfMails : function () {
 
             this.mailGot = [];
+
+            this.saveState = this.numberOfMails;
 
             for (let i = 0; i < this.numberOfMails; i++) {
                 axios
@@ -28,6 +31,8 @@ createApp ( {
                     
                 })
             };
+
+            this.numberOfMails = '';
 
         }
     },

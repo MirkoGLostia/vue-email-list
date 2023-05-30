@@ -24,7 +24,7 @@
         </div>
 
         <div>
-            <ol v-if="mailGot.length !== 0 && numberOfMails === mailGot.length">
+            <ol v-if="mailGot.length !== 0 && saveState === mailGot.length">
                 <li v-for="mail in mailGot">
                     {{mail}}
                 </li>
