@@ -36,14 +36,4 @@ createApp ( {
 
         }
     },
-
-    computed : {
-
-    },
-
-    mounted () {
-
-        
-
-    }
 }).mount ("#list-container");
